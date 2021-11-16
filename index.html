@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/cd98dd4e90.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Code for sidenav -->
+  <div class="sidenava" style="white;">
+    <div id="mySidenav" class="sidenav">
+      <audio id="beep" preload="auto">
+        <source src="trans.wav">
+      </audio>
+      <a href="#home" id="Home" onmousedown="bleep.play()">
+        Home &nbsp;&nbsp;&nbsp;<span class="sidespan"><i class="fas fa-home"></i></span>
+      </a>
+      <a href="#about" id="About" onmousedown="bleep.play()">
+        About &nbsp;&nbsp;&nbsp; <span class="sidespan"><i class="fas fa-info"></i></span>
+      </a>
+      <a href="#projects" id="Projects" onmousedown="bleep.play()">
+        Projects <span class="sidespan"><i class="fas fa-project-diagram"></i></span>
+      </a>
+      <a href="#contact" id="Contact" onmousedown="bleep.play()">
+        Contact &nbsp;<span class="sidespan"><i class="far fa-address-card"></i></span>
+      </a>
+    </div>
+
+    <!-- Code for social_links -->
+    <div class="social_link">
+      <!-- <a href="https://api.whatsapp.com/send?phone=919220903643&text=hii" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://mailto: ronakgaikar4@gmail.com" target="_blank">
+      <i class="far fa-envelope"></i>
+    </a> -->
+      <div class="hl"></div>
+      <a href="https://github.com/ronakgaikar" onmousedown="click.play()" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://instagram.com/gaikar_ronak" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/UCWsod3XQhODKQ32EnFenl8w" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- all content is here -->
+  <div class="content">
+
+    <!-- home -->
+    <div id="home">
+      <div class="card">
+        <img src="ronak.jpg" id="ronak-jpg" alt="Avatar">
+        <div class="card_container">
+          <h2>RONAK GAIKAR</h2>
+          <h4>Web Developer</h4>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- about -->
+    <div id="about">
+      <h2 class="about-title">About</h2>
+      <p>I like to code very minimum that required, well organised and clean code. Which day i didn't code i am very sad
+        and depressed. I am passionated coder. I have ability do coding day and night. I like to learn more and more
+        programming languages in free time.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam tempore dolores maiores quod, ducimus temporibus
+        eos, laborum placeat esse, est possimus? Dolore ducimus natus, totam suscipit laborum quod explicabo distinctio
+        nam obcaecati temporibus corrupti eaque! Tenetur corrupti molestias voluptate repellat magnam labore neque
+        blanditiis laboriosam eos! Tempora nihil voluptatum illo repellat numquam, dolorum consequuntur provident
+        perferendis explicabo necessitatibus distinctio cum sit. Maxime ullam accusantium ipsum sunt pariatur asperiores
+        dignissimos totam. Mollitia laudantium nobis officiis rerum distinctio fugiat. Optio cupiditate quaerat adipisci
+        nesciunt amet, facilis ratione blanditiis repellendus quae et libero magnam molestias consectetur facere ullam
+        totam, rem dolore inventore. Quae!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit similique cum nisi sit consectetur laborum
+        quidem. Nostrum deleniti modi aut quisquam voluptas! Voluptatem officiis, unde a quo rerum vitae recusandae
+        magnam deleniti omnis accusamus ex temporibus cumque reprehenderit ipsa minus consequatur ipsam debitis non
+        quae, cupiditate nulla consequuntur quisquam voluptatibus! Veritatis non voluptatem accusamus, libero labore
+        voluptatum sed culpa at?
+      </p>
+    </div>
+
+    <div id="projects">
+      <h2 class="projects-title">Projects</h2>
+      <div class="project-one-card">
+        <img src="village.jpg" class="project-one-img" alt="village-img">
+        <div class="project-one-container">
+          <h4>VILLAGE WEBSITE</h4>
+          <a href="https://techovertaker.github.io/ghumeshwarvillage.github.io/" target="_blank"
+            rel="noopener noreferrer"> &nbsp;View &nbsp;
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+      <h2 class="contact-title">Contact</h2>
+      <h4>
+        <a href="https://api.whatsapp.com/send?phone=919220903643&text=hii" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a><span style="color: #f77f00;"> Text me on</span>
+        Whatsapp
+      </h4>
+      <h4>
+        <a href="https://mailto: ronakgaikar4@gmail.com" target="_blank">
+          <i class="far fa-envelope"></i>
+        </a>Mail
+        <span style="color: #f77f00;">me</span>
+      </h4>
+      <h4>
+        <a href="tel:+91-9220903643" onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});">
+      <i class="fas fa-phone-alt"></i></a><span style="color: #f77f00;"> Call</span>
+      me
+    </h4>
+    </div>
+
+    <div class="footer">
+      <p>&copy; Copyright 2021 Ronak Gaikar</p>
+    </div>
+  </div>
+  <script>
+    // Funtion for sound effect on click of any button/a
+    let bleep = new Audio();
+    bleep.src = "trans.wav";
+  </script>
+
+</body>
+
+</html>
