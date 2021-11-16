@@ -212,7 +212,33 @@ a{
   text-align: center;
 }
 
+@media only screen and (max-width: 750px){
+  .project-one-card{
+    width: 76%;
+  }
+}
 
+@media only screen and (max-width: 532px) {
+  .card{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-title{
+    font-size: 22px;
+  }
+  #about p{
+    font-size: 14px;
+  }
+  .projects-title{
+    font-size: 22px;
+  }
+  .project-one-card{
+    width: 323px;
+  }
+  .contact-title{
+    font-size: 22px;
+  }
+}
   
 
   
