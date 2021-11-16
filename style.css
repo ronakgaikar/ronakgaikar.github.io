@@ -238,6 +238,9 @@ a{
   .contact-title{
     font-size: 22px;
   }
+  #mySidenav a{
+    background-color: rgb(51, 46, 46);
+  }
 }
   
 
