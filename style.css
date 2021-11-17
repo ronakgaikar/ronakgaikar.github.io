@@ -253,6 +253,12 @@ a{
 
 }
 
+@media only screen and (max-width: 400px){
+ .sidenav{
+   display: none;
+ }
+}
+
 @media only screen and (max-width: 380px){
   #about p{
     font-size: 10px;
