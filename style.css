@@ -129,6 +129,7 @@ a{
 
   #ronak-jpg { 
     width: 265px; 
+    border: 5px solid white;
     border-radius: 14px; 
   }
 
@@ -269,6 +270,7 @@ a{
 }
 
 .topnav {
+  margin-left: 34px;
   overflow: hidden;
   background-color: #333;
 }
