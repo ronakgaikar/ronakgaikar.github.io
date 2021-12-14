@@ -254,7 +254,7 @@ a{
 
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 532px){
  .sidenav{
    display: none;
  }
@@ -321,7 +321,7 @@ a{
   }
 }
 
-@media screen and (min-width: 400px){
+@media screen and (min-width: 532px){
   .topnav {
     display: none;
   }
