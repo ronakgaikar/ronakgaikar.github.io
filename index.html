@@ -6,27 +6,26 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-  <link rel="icon" href="ronak_profile.jpg" type="image/gif" sizes="16x16">
   <script src="https://kit.fontawesome.com/cd98dd4e90.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- Code for sidenav -->
   <div class="topnav" id="myTopnav">
-    <a href="#home" class="active" onmousedown="bleep.play()">Home
-      <!-- <span class="sidespan"><i class="fas fa-home"></i></span> -->
-    </a>
-    <a href="#about" onmousedown="bleep.play()">About</a>
-    <a href="#projects" onmousedown="bleep.play()">Projects</a>
-    <a href="#contact" onmousedown="bleep.play()">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()" onmousedown="bleep.play()">
+    <a href="#home" class="active"><span class="sidespan"><i class="fas fa-home"></i></span></a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
   
   <div class="sidenava" style="white;">
     <div id="mySidenav" class="sidenav">
-
+      <audio id="beep" preload="auto">
+        <source src="trans.wav">
+      </audio>
       <a href="#home" id="Home" onmousedown="bleep.play()">
         home<span class="sidespan"><i class="fas fa-home"></i></span>
       </a>
@@ -50,13 +49,13 @@
       <i class="far fa-envelope"></i>
     </a> -->
       <div class="hl"></div>
-      <a href="https://github.com/ronakgaikar" onmousedown="bleep.play()" target="_blank">
+      <a href="https://github.com/ronakgaikar" onmousedown="click.play()" target="_blank">
         <i class="fab fa-github"></i>
       </a>
-      <a href="https://instagram.com/gaikar_ronak" onmousedown="bleep.play()" target="_blank">
+      <a href="https://instagram.com/gaikar_ronak" target="_blank">
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://www.youtube.com/channel/UCWsod3XQhODKQ32EnFenl8w" onmousedown="bleep.play()" target="_blank">
+      <a href="https://www.youtube.com/channel/UCWsod3XQhODKQ32EnFenl8w" target="_blank">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
@@ -92,7 +91,7 @@
         <img src="village.jpg" class="project-one-img" alt="village-img">
         <div class="project-one-container">
           <h4>VILLAGE WEBSITE</h4>
-          <a href="https://techovertaker.github.io/ghumeshwarvillage.github.io/" onmousedown="bleep.play()" target="_blank"
+          <a href="https://techovertaker.github.io/ghumeshwarvillage.github.io/" target="_blank"
             rel="noopener noreferrer"> &nbsp;View &nbsp;
           </a>
         </div>
@@ -103,19 +102,19 @@
     <div id="contact">
       <h2 class="contact-title">Contact</h2>
       <h4>
-        <a href="https://api.whatsapp.com/send?phone=919220903643&text=Hey There I am " onmousedown="bleep.play()" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=919220903643&text=hii" target="_blank">
           <i class="fab fa-whatsapp"></i>
         </a><span style="color: #f77f00;"> Text me on</span>
         Whatsapp
       </h4>
       <h4>
-        <a href="https://mailto: ronakgaikar4@gmail.com" onmousedown="bleep.play()" target="_blank">
+        <a href="https://mailto: ronakgaikar4@gmail.com" target="_blank">
           <i class="far fa-envelope"></i>
         </a>Mail
         <span style="color: #f77f00;">me</span>
       </h4>
       <h4>
-        <a href="tel:+91-9220903643" onmousedown="bleep.play()"
+        <a href="tel:+91-9220903643"
           onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});">
           <i class="fas fa-phone-alt"></i></a><span style="color: #f77f00;"> Call</span>
         me
@@ -125,11 +124,16 @@
     <div class="footer">
       <p>&copy; Copyright 2021 Ronak Gaikar</p>
     </div>
+
+    <!-- orange colored waves -->
+    <svg class="svg_one" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f77f00" fill-opacity="1" d="M0,224L80,234.7C160,245,320,267,480,256C640,245,800,203,960,181.3C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
   </div>
+
+  
   <script>
     // Funtion for sound effect on click of any button/a
     let bleep = new Audio();
-    bleep.src = "popp.mp3";
+    bleep.src = "trans.wav";
 
     function myFunction() {
   var x = document.getElementById("myTopnav");
