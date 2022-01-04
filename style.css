@@ -196,6 +196,9 @@ a{
 }
 
 /* contact */
+#contact{
+  border-bottom: 2px solid #F77F00;
+}
 .contact-title{
   border-bottom: 3px solid #F77F00;
   display: inline-block;
@@ -218,7 +221,6 @@ a{
 
 /* footer styling */
 .footer{
-  border-top: 2px solid #F77F00;
   text-align: center;
 }
 
@@ -226,6 +228,9 @@ a{
 .svg_one{
   margin-top: -40px;
   display: none;
+  border: 2px solid white;
+  border-radius: 13px;
+  box-shadow: 0 2px 1px 0 rgb(245 244 244);
 }
 
 @media only screen and (max-width: 750px){
@@ -340,7 +345,6 @@ a{
     display: none;
   }
 }
-
 
   
 
