@@ -96,7 +96,7 @@ a{
 /* Social_link icons github, instagram, youtube */
   .social_link {
     position: fixed;
-    bottom: 0;
+    bottom: 12px;
     left: 0;
     font-size: 20px;
     display: flex;
@@ -222,15 +222,7 @@ a{
 /* footer styling */
 .footer{
   text-align: center;
-}
-
-/* orange colored wave styling */
-.svg_one{
-  margin-top: -40px;
-  display: none;
-  border: 2px solid white;
-  border-radius: 13px;
-  box-shadow: 0 2px 1px 0 rgb(245 244 244);
+  border-bottom: 2px solid #F77F00;
 }
 
 @media only screen and (max-width: 750px){
